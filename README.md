@@ -40,7 +40,6 @@ They do not answer questions such as:
 * Will developers understand how this fits into their workflow?
 * Can they determine which APIs they need?
 * Can they accomplish their goals using the documented capabilities?
-* Can they successfully build a real integration?
 
 Developer success depends on more than correctness.
 
@@ -60,7 +59,7 @@ flowchart TB
 
     B["2. Usability & Mental Models<br/><br/>
     • Developer expectations<br/>
-    • Resource relationships<br/>
+    • Conceptual clarity<br/>
     • Workflow coherence<br/><br/>
     <b>Does this make sense to developers?</b>"]
 
@@ -74,13 +73,13 @@ flowchart TB
     • End-to-end workflows<br/>
     • Integration complexity<br/>
     • Documentation vs reality<br/><br/>
-    <b>Can developers actually build with it?</b>"]
+    <b>Can developers successfully build with it?</b>"]
 
     A --> B --> C --> D
 
     E["<b>Key Insight</b><br/><br/>
-    Correct ≠ Usable<br/>
-    Usable ≠ Understandable<br/>
+    Correct ≠ Clear<br/>
+    Clear ≠ Understandable<br/>
     Understandable ≠ Buildable"]
 
     D ==> E
@@ -92,10 +91,10 @@ flowchart TB
 
 Each layer answers a different question:
 
-Is the API correct?
-Is it clear what the API does?
-Can developers understand how to use it?
-Can developers successfully build with it?
+* Is the API correct?
+* Is it clear what the API does?
+* Can developers understand how to use it?
+* Can developers successfully build with it?
 
 ---
 
