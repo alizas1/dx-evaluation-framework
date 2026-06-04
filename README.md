@@ -51,50 +51,52 @@ Developer experience issues emerge across multiple layers.
 
 ```mermaid
 flowchart TB
-    A["1. Structural Correctness<br/><br/>
-    • Schema & consistency<br/>
-    • Conventions<br/>
-    • Error handling<br/><br/>
-    <b>Is the API technically correct?</b>"]
 
-    B["2. Mental Models<br/><br/>
-    • Developer expectations<br/>
-    • Conceptual clarity<br/>
-    • Workflow coherence<br/><br/>
-    <b>Does this make sense to developers?</b>"]
+    A["1. Structural Correctness
 
-    C["3. Documentation Validation<br/><br/>
-    • Workflows & use cases<br/>
-    • Clarity & completeness<br/>
-    • Dependencies & prerequisites<br/><br/>
-    <b>Can developers understand how to use it?</b>"]
+    Is the API technically correct?"]
 
-    D["4. Real-World Implementation<br/><br/>
-    • End-to-end workflows<br/>
-    • Integration complexity<br/>
-    • Documentation vs reality<br/><br/>
-    <b>Can developers successfully build with it?</b>"]
+    B["2. Mental Models
 
-    A --> B --> C --> D
+    Can developers construct an accurate understanding?"]
 
-    E["<b>Key Insight</b><br/><br/>
-    Correct ≠ Clear<br/>
-    Clear ≠ Understandable<br/>
-    Understandable ≠ Buildable"]
+    C["3. Information Validation
 
-    D ==> E
+    Is the information required for success available?"]
+
+    D["4. Real-World Implementation
+
+    Can developers successfully accomplish their goals?"]
+
+    A --> E
+    B --> E
+    C --> E
+    D --> E
+
+    E["Key Insight
+
+    Each layer reveals different categories of risk.
+
+    Success at one layer does not guarantee success at another.
+
+    Evaluating a single layer creates false confidence."]
 ```
 
 ---
 
 ## Key Insight
 
-Each layer answers a different question:
+Each layer evaluates a different category of developer risk.
 
-* Is the API correct?
-* Is it clear what the API does?
-* Can developers understand how to use it?
-* Can developers successfully build with it?
+Success at one layer does not guarantee success at the next.
+
+An API can be technically correct while still creating confusion.
+
+Developers can understand what an API is while lacking information required to use it effectively.
+
+Information can be available while implementation exposes challenges that were not visible during review.
+
+Evaluating a single layer creates false confidence.
 
 ---
 
@@ -121,7 +123,7 @@ The remainder of this portfolio contains examples of how this framework was appl
 Examples include:
 
 * API usability evaluations
-* Documentation validation exercises
+* Information validation exercises
 * Real-world implementation findings
 * Evaluation systems designed to scale developer experience review
 
