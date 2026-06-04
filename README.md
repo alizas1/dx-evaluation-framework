@@ -1,40 +1,54 @@
 # Evaluating API Developer Experience
 
-Developer experience is not defined by whether an API works.
+Developer experience isn't defined by whether an API works.
 
-It’s defined by whether developers can successfully use it without unnecessary friction.
+It's defined by whether developers can successfully achieve their goals with it.
 
-APIs that are technically correct still fail developers every day.
+An API can be technically correct and still fail developers.
 
-Traditional API reviews focus on correctness: schemas, validation, and consistency.
-But correctness alone does not guarantee usability, clarity, or successful integration.
+Over seven years reviewing public APIs, validating documentation, building test implementations, and designing evaluation systems, I repeatedly encountered the same pattern:
 
-Here I introduce a practical framework for evaluating **API Developer Experience (DX)** across four layers:
+Teams focused on whether an API was correct.
 
-* Structural Correctness
-* Usability
-* Documentation
-* Real-World Usage
+Developers cared whether they could successfully use it.
+
+Those are not the same thing.
+
+This framework emerged from an effort to answer a simple question:
+
+> How can we determine whether developers will succeed?
 
 ---
 
 ## The Problem
 
-Traditional API reviews (even thorough ones) tend to answer:
+Most API reviews focus on the API itself.
 
-> *“Is this API correct?”*
+Questions such as:
 
-But they often miss more important questions:
+* Is the schema consistent?
+* Are resources modeled correctly?
+* Are validation rules enforced?
+* Does the API follow established conventions?
 
-* Does this make sense to a developer encountering it for the first time?
-* Can someone understand how to actually use it from the documentation?
-* Can it support a real integration without friction?
+These questions matter.
+
+But they only evaluate one layer of developer experience.
+
+They do not answer questions such as:
+
+* Will developers understand how this fits into their workflow?
+* Can they determine which APIs they need?
+* Can they accomplish their goals using the documented capabilities?
+* Can they successfully build a real integration?
+
+Developer success depends on more than correctness.
 
 ---
 
 ## The Framework
 
-API DX issues don’t exist at a single level. They emerge across layers:
+Developer experience issues emerge across multiple layers.
 
 ```mermaid
 flowchart TB
@@ -45,72 +59,71 @@ flowchart TB
     <b>Is the API technically correct?</b>"]
 
     B["2. Usability & Mental Models<br/><br/>
-    • Naming & expectations<br/>
+    • Developer expectations<br/>
     • Resource relationships<br/>
     • Workflow coherence<br/><br/>
     <b>Does this make sense to developers?</b>"]
 
-    C["3. Documentation<br/><br/>
-    • Explaining workflows<br/>
+    C["3. Documentation Validation<br/><br/>
+    • Workflows & use cases<br/>
     • Clarity & completeness<br/>
-    • Sequence & dependencies<br/><br/>
+    • Dependencies & prerequisites<br/><br/>
     <b>Can developers understand how to use it?</b>"]
 
-    D["4. Real-World Usage<br/><br/>
+    D["4. Real-World Implementation<br/><br/>
     • End-to-end workflows<br/>
     • Integration complexity<br/>
-    • Docs vs behavior<br/><br/>
+    • Documentation vs reality<br/><br/>
     <b>Can developers actually build with it?</b>"]
 
     A --> B --> C --> D
 
-    subgraph Insight
-        E["Correct ≠ Usable<br/>Usable ≠ Understandable<br/>Understandable ≠ Buildable"]
-    end
+    E["<b>Key Insight</b><br/><br/>
+    Correct ≠ Usable<br/>
+    Usable ≠ Understandable<br/>
+    Understandable ≠ Buildable"]
 
-    D --> E
+    D ==> E
 ```
 
 ---
 
 ## Key Insight
 
-Each layer filters different types of problems:
+Each layer answers a different question:
 
-* An API can be **correct but confusing**
-* It can be **usable but difficult to explain**
-* It can be **well-documented but fail in real-world usage**
+Is the API correct?
+Is it clear what the API does?
+Can developers understand how to use it?
+Can developers successfully build with it?
 
 ---
 
 ## Where This Comes From
 
-This framework is based on my hands-on work across:
+This framework is based on:
 
-* API design reviews covering a large portion of Wix's APIs since 2019
-* Documentation strategy
-* Developer tooling and AI-assisted review systems
-* Design partner feedback loops
+* Hundreds of API design reviews
+* Documentation strategy and validation work
+* Implementation-based API evaluation
+* Reviewer training and evaluation processes
+* AI-assisted API review systems
 
-It reflects patterns observed across real APIs, not a theoretical model.
+It is not intended as a theoretical model.
 
----
-
-## How to Use This Framework
-
-This framework is useful for:
-
-* API design reviews
-* DX evaluations
-* Documentation planning
-* Identifying gaps in developer onboarding
+It's a synthesis of recurring patterns observed while evaluating whether developers could successfully use real APIs.
 
 ---
 
-## Related Work
+## Applying the Framework
 
-* [From Syntax Checker to Critical Reviewer: How We Convinced AI to Catch Real Quality Issues](https://medium.com/@alizaryeh/from-syntax-checker-to-critical-reviewer-how-we-convinced-ai-to-catch-real-api-quality-issues-965986af786b)
-* [AI Project Leadership: When "Not Technical Enough" Became My Superpower](https://medium.com/@alizaryeh/ai-project-leadership-when-not-technical-enough-became-my-superpower-4c564573d267)
-* [Unleashing Your API's Potential: How Strategic Documentation Drives Success](https://medium.com/wix-engineering/unleashing-your-apis-potential-how-strategic-documentation-drives-success-5aa84bf29793)
+The remainder of this portfolio contains examples of how this framework was applied in practice.
 
----
+Examples include:
+
+* API usability evaluations
+* Documentation validation exercises
+* Real-world implementation findings
+* Evaluation systems designed to scale developer experience review
+
+Together, these examples illustrate how different layers of the framework expose different categories of developer experience issues.
