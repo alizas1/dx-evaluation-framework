@@ -64,7 +64,7 @@ Questions I explore include:
 
 ### Observations
 
-Many APIs expose the functionality required to accomplish a task while providing little indication of how developers are expected to use that functionality in practice.
+Many APIs expose the functionality required to accomplish a task while providing little indication of how developers are expected to use that functionality in practice. Developers don't integrate individual operations. They integrate workflows.
 
 Recurring issues include unclear workflow sequencing, hidden prerequisites, incomplete lifecycle understanding, and capabilities that make sense individually but not as part of a larger process.
 
