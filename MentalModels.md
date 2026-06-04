@@ -1,10 +1,12 @@
 # Layer 2: Mental Models 
-Before developers can use an API, they need to make sense of it. 
-They need to understand what functionality it provides, how capabilities fit into the larger platform, and what assumptions they can safely make about its behavior. 
+Before developers can build successfully with an API, they need to make sense of it. 
+They need to understand what functionality it provides, how it's capabilities fit into the larger platform, and what assumptions they can safely make about its behavior. 
 The areas below represent recurring patterns I evaluate when reviewing APIs. 
 
 ## Representation & Meaning 
-Can developers understand what they're looking at? 
+
+Can developers understand what they're looking at?  
+
 Questions I explore include:  
 * Can developers tell what this functionality does?  
 * Can they understand how it is intended to be used?  
@@ -14,7 +16,7 @@ Questions I explore include:
 * Can developers interpret the information being returned without additional context?  
 
 ### Observations 
-Many APIs expose information successfully but provide too little context for developers to understand what that information means or how it should be used. 
+Many APIs successfully expose information but provide too little context for developers to understand what that information means or how it should be used. 
 Recurring issues include undefined concepts, responses that require domain knowledge to interpret, information whose purpose is unclear, and representations that obscure important relationships. 
 Developers are often left asking questions such as:  
 * What is this?  
@@ -31,9 +33,10 @@ Those assumptions may end up being wrong, creating problems that may not become 
 Can developers understand how capabilities fit together? 
 Questions I explore include:  
 * How does this API relate to existing APIs?  
-* When should developers use this API instead of another one? * How does this capability fit into the larger platform?  
-* Does terminology align across APIs dealing with similar functionality?  
-* Does functionality align across APIs dealing with similar functionality?  
+* When should developers use this API instead of another one?
+* * How does this capability fit into the larger platform?  
+* Does terminology align across related APIs?  
+* Are similar concepts represented consistently?  
 * Will developers understand how these APIs work together?  
 
 ### Observations 
@@ -42,11 +45,49 @@ I frequently encounter capabilities that overlap with existing functionality, ex
 In these situations, the challenge is rarely understanding an individual API. The challenge is understanding the system. 
 
 ### Why It Matters 
-Developers experience platforms as ecosystems. When relationships between capabilities are unclear, developers are forced to construct their own understanding of how the platform works. 
+Developers experience platforms as ecosystems. 
+When relationships between capabilities are unclear, developers are forced to construct their own understanding of how the platform works. 
 That understanding can easily be incomplete or incorrect. 
 
-## Assumptions & Expectations 
-What assumptions are developers likely to make? 
+## Workflow Understanding
+
+Can developers understand how to accomplish their goals?
+
+Questions I explore include:
+
+* Can developers identify the starting point?
+* Can they determine the sequence of actions required?
+* Can they understand what happens next?
+* Are important lifecycle transitions clear?
+* Can they understand how multiple capabilities work together to support a workflow?
+* Can they determine how a task is intended to be completed?
+
+### Observations
+
+Many APIs expose the functionality required to accomplish a task while providing little indication of how developers are expected to use that functionality in practice.
+
+Recurring issues include unclear workflow sequencing, hidden prerequisites, incomplete lifecycle understanding, and capabilities that make sense individually but not as part of a larger process.
+
+Developers are often left asking questions such as:
+
+* Where do I start?
+* What happens next?
+* What is the expected sequence?
+* Which endpoint should I use first?
+* How does this process actually work?
+
+### Why It Matters
+
+Developers do not build with endpoints in isolation.
+
+They build workflows.
+
+When developers cannot understand how capabilities fit into a larger process, even technically correct APIs become difficult to use successfully.
+
+## Assumptions & Expectations  
+
+What assumptions are developers likely to make?  
+
 Questions I explore include: 
 * What behavior will developers expect?  
 * What information will they expect to be available?  
