@@ -6,7 +6,11 @@ It's defined by whether developers can successfully achieve their goals with it.
 
 An API can be technically correct and still fail developers.
 
-Over seven years reviewing public APIs, validating documentation, building test implementations, and designing evaluation systems, I repeatedly encountered the same pattern:
+Developers can understand what an API is and still lack information required to use it effectively.
+
+Information can be available and implementation can still expose challenges that were not visible during review.
+
+Over years reviewing public APIs, validating documentation, building test implementations, and designing evaluation systems, I repeatedly encountered the same pattern:
 
 Teams focused on whether an API was correct.
 
@@ -96,7 +100,7 @@ Developers can understand what an API is while lacking information required to u
 
 Information can be available while implementation exposes challenges that were not visible during review.
 
-Evaluating a single layer creates false confidence.
+Evaluating only a single layer creates false confidence.
 
 ---
 
