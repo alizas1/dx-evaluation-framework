@@ -57,7 +57,7 @@ flowchart TB
     • Error handling<br/><br/>
     <b>Is the API technically correct?</b>"]
 
-    B["2. Usability & Mental Models<br/><br/>
+    B["2. Mental Models<br/><br/>
     • Developer expectations<br/>
     • Conceptual clarity<br/>
     • Workflow coherence<br/><br/>
