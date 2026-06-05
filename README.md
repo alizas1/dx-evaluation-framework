@@ -22,8 +22,6 @@ This framework emerged from an effort to answer a simple question:
 
 > How can we determine whether developers will succeed?
 
----
-
 ## The Problem
 
 Most API reviews focus on the API itself.
@@ -46,8 +44,6 @@ They do not answer questions such as:
 * Can they accomplish their goals using the documented capabilities?
 
 Developer success depends on more than correctness.
-
----
 
 ## The Framework
 
@@ -86,8 +82,6 @@ flowchart TB
     Evaluating a single layer creates false confidence."]
 ```
 
----
-
 ## Key Insight
 
 Each layer evaluates a different category of developer risk.
@@ -101,8 +95,6 @@ Developers can understand what an API is while lacking information required to u
 Information can be available while implementation exposes challenges that were not visible during review.
 
 Evaluating only a single layer creates false confidence.
-
----
 
 ## Where This Comes From
 
@@ -118,17 +110,3 @@ It is not intended as a theoretical model.
 
 It's a synthesis of recurring patterns observed while evaluating whether developers could successfully use real APIs.
 
----
-
-## Applying the Framework
-
-The remainder of this portfolio contains examples of how this framework was applied in practice.
-
-Examples include:
-
-* API usability evaluations
-* Information validation exercises
-* Real-world implementation findings
-* Evaluation systems designed to scale developer experience review
-
-Together, these examples illustrate how different layers of the framework expose different categories of developer experience issues.
