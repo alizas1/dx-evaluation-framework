@@ -11,7 +11,7 @@ They may be trying to:
 * Integrate systems.
 * Solve a customer problem.
 
-The platform's capabilities are merely the tools available to help them achieve those goals.
+The platform makes tools available to help them achieve those goals.
 
 Eventually I realized that some of the biggest developer experience issues emerged while developers were trying to make decisions.
 
@@ -22,9 +22,7 @@ They emerged while developers were trying to answer questions such as:
 * Can the platform support what I'm trying to build?
 * What should I do next?
 
-The examples below span frameworks, platform capabilities, and implementation workflows.
-
-They are connected by a common challenge: the decisions developers must make on their way from a goal to a solution.
+The examples below involve different products, capabilities, and workflows, but they all expose the same challenge: the decisions developers must make on their way from a goal to a solution.
 
 ---
 
@@ -63,6 +61,8 @@ I recommended allowing access to account status information even when the accoun
 Large platforms naturally evolve over time.
 
 New capabilities emerge. Existing functionality evolves. Different teams solve related problems in different ways.
+
+As a result, developers are often presented with multiple ways to accomplish similar goals.
 
 One example involved checkout creation.
 
