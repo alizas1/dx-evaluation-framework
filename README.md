@@ -22,8 +22,6 @@ This framework emerged from an effort to answer a simple question:
 
 > How can we determine whether developers will succeed?
 
----
-
 ## The Problem
 
 Most API reviews focus on the API itself.
@@ -46,8 +44,6 @@ They do not answer questions such as:
 * Can they accomplish their goals using the documented capabilities?
 
 Developer success depends on more than correctness.
-
----
 
 ## The Framework
 
@@ -86,8 +82,6 @@ flowchart TB
     Evaluating a single layer creates false confidence."]
 ```
 
----
-
 ## Key Insight
 
 Each layer evaluates a different category of developer risk.
@@ -102,33 +96,30 @@ Information can be available while implementation exposes challenges that were n
 
 Evaluating only a single layer creates false confidence.
 
----
-
 ## Where This Comes From
 
-This framework is based on:
+This framework emerged from years of evaluating APIs from the perspective of developer success.
 
-* Hundreds of API design reviews
-* Documentation strategy and validation work
-* Implementation-based API evaluation
-* Reviewer training and evaluation processes
-* AI-assisted API review systems
+During that time, I reviewed hundreds of APIs across multiple platform domains, validated documentation, built test implementations, trained reviewers, developed review guidelines, and later helped design AI-assisted review systems.
 
-It is not intended as a theoretical model.
+The framework did not emerge from a single review process or initiative.
 
-It's a synthesis of recurring patterns observed while evaluating whether developers could successfully use real APIs.
+It emerged from repeatedly observing the same categories of developer experience issues across different products, teams, and implementation scenarios.
 
----
+Some issues were visible during API review.
+
+Others appeared only when validating documentation.
+
+Others emerged only when attempting a realistic implementation.
+
+The framework is an attempt to organize those observations into a model that explains where different types of developer experience risks appear and how they can be identified.
 
 ## Applying the Framework
 
-The remainder of this portfolio contains examples of how this framework was applied in practice.
+## Applying the Framework
 
-Examples include:
+The remainder of this portfolio explores the framework through real examples.
 
-* API usability evaluations
-* Information validation exercises
-* Real-world implementation findings
-* Evaluation systems designed to scale developer experience review
+Each example focuses on a different category of developer experience risk, from platform understanding and capability selection to information validation, implementation challenges, and scalable review systems.
 
-Together, these examples illustrate how different layers of the framework expose different categories of developer experience issues.
+Taken together, they show that developer success depends on a chain of decisions, assumptions, information, and implementation details, and that failures can emerge at any point along that path.
