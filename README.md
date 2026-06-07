@@ -1,5 +1,7 @@
 # Developer Experience Portfolio
 
+By Aliza Solomon
+
 This portfolio explores how developer experience issues emerge, how they can be identified, and how developer experience review can be scaled across teams and systems.
 
 The articles are based on years of API review, documentation validation, implementation work, reviewer training, and AI-assisted evaluation projects at Wix. 
