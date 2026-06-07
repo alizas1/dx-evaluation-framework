@@ -2,7 +2,8 @@
 
 This portfolio explores how developer experience issues emerge, how they can be identified, and how developer experience review can be scaled across teams and systems.
 
-The articles are based on years of API review, documentation validation, implementation work, reviewer training, and AI-assisted evaluation projects at Wix.
+The articles are based on years of API review, documentation validation, implementation work, reviewer training, and AI-assisted evaluation projects at Wix. 
+During that time, I helped develop review practices and evaluation systems that brought developer experience considerations earlier into the API lifecycle, eventually making developer experience review a required stage of the API publication process.
 
 ## Contents
 
@@ -29,6 +30,10 @@ Examines issues that emerge only when realistic implementations are attempted.
 ### 6. Scaling Developer Experience Review
 
 Describes how developer experience review expertise was codified into guidelines, reviewer training, and AI-assisted review systems.
+
+## Scope
+
+The examples in this portfolio are drawn from reviewing hundreds of APIs across multiple platform domains, validating documentation, building implementation prototypes, developing review methodologies, training reviewers, and helping design AI-assisted review systems used to scale developer experience evaluation.
 
 ## Central Idea
 
