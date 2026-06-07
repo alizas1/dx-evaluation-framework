@@ -10,7 +10,7 @@ Developers can understand what an API is and still lack information required to 
 
 Information can be available and implementation can still expose challenges that were not visible during review.
 
-Over years reviewing public APIs, validating documentation, building test implementations, and designing evaluation systems, I repeatedly encountered the same pattern:
+Over years reviewing public APIs, writing and evaluating documentation, building test implementations, and designing evaluation systems, I repeatedly encountered the same pattern:
 
 Teams focused on whether an API was correct.
 
@@ -100,11 +100,14 @@ Evaluating only a single layer creates false confidence.
 
 This framework emerged from years of evaluating APIs from the perspective of developer success.
 
+When I joined the API review effort, there was no formal developer experience review process. Most developer experience issues surfaced during documentation review, after the API had already been designed and implemented.
+
+I focused on identifying developer experience issues earlier in the design process, when recommendations could still influence the API itself.
+Developer experience review eventually became a required stage of the API publication process, bringing developer experience considerations much  earlier into API design.
+
 During that time, I reviewed hundreds of APIs across multiple platform domains, validated documentation, built test implementations, trained reviewers, developed review guidelines, and later helped design AI-assisted review systems.
 
-The framework did not emerge from a single review process or initiative.
-
-It emerged from repeatedly observing the same categories of developer experience issues across different products, teams, and implementation scenarios.
+Across all of this work, the same categories of developer experience issues appeared repeatedly across different products, teams, and implementation scenarios.
 
 Some issues were visible during API review.
 
@@ -113,8 +116,6 @@ Others appeared only when validating documentation.
 Others emerged only when attempting a realistic implementation.
 
 The framework is an attempt to organize those observations into a model that explains where different types of developer experience risks appear and how they can be identified.
-
-## Applying the Framework
 
 ## Applying the Framework
 
