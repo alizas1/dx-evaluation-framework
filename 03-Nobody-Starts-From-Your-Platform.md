@@ -13,9 +13,7 @@ They may be trying to:
 
 The platform makes tools available to help them achieve those goals.
 
-Eventually I realized that some of the biggest developer experience issues emerged while developers were trying to make decisions.
-
-They emerged while developers were trying to answer questions such as:
+Eventually I realized that some of the biggest developer experience issues emerged at decision points, trying to answer questions like:
 
 * Which path should I take?
 * Which solution best fits my needs?
@@ -30,9 +28,10 @@ The examples below involve different products, capabilities, and workflows, but 
 
 Developers building Wix apps needed to select an app-building framework before they could begin implementation.
 
-Many chose based on familiarity, perceived simplicity, or their existing skill set.
+The issue wasn't understanding the frameworks themselves. It was helping developers evaluate implementation paths before committing to one.
 
-Only later did they discover that the extension required to support their intended functionality was not available within the framework they had chosen.
+But they didn't know how to, or how significant this choice was going to be. So many chose based on familiarity, perceived simplicity, or their existing skill set.
+Then later they discovered that the extension required to support their intended functionality was not available within the framework they had chosen.
 
 As a result, developers could commit to an implementation path that could never support their intended outcome.
 
@@ -42,6 +41,9 @@ To address this, I created guidance that helped developers choose the extension 
 
 ## Understanding Responsibility
 
+Not every decision involved choosing a framework or capability.
+Sometimes developers were simply trying to understand what was happening and what action they should take next.
+
 Developers integrating Email Marketing expected to be able to determine the status of the processes they initiated.
 
 Under certain circumstances, however, an account could enter a warning, suspension, or restriction state that required action from the site owner.
@@ -50,7 +52,7 @@ The developer could not resolve the issue themselves.
 
 The status endpoint they expected to use returned a generic error rather than information about the account state or the action required to resolve it.
 
-Developers needed to understand not only the state of the account, but also whether they could take action themselves or whether intervention from the site owner was required.
+Developers needed to understand not only the state of the account, but also whether they could take action themselves or whether intervention from the site owner was required. 
 
 I recommended allowing access to account status information even when the account was in a warning, suspension ore restriction state so developers could understand what was happening and guide their customers accordingly.
 
@@ -80,17 +82,11 @@ I recommended explicitly explaining when each capability should be used and dire
 
 ## Observation
 
-Each of these examples involves a different type of decision.
+The details vary, but the underlying challenge is remarkably consistent.
 
-* Which path should I take?
+Developers needed to decide which framework to use, understand why a workflow had stopped working, or determine which capability best fit their needs.
 
-* What is happening?
-
-* Which solution best fits my needs?
-
-The details vary, but the underlying challenge is the same.
-
-Developers need enough context to make informed decisions.
+In each case, success depended on having enough context to make the right decision.
 
 When they have that context, they can move forward confidently.
 
