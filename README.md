@@ -100,11 +100,13 @@ Evaluating only a single layer creates false confidence.
 
 This framework emerged from years of evaluating APIs from the perspective of developer success.
 
+When I joined the API review effort, there was no formal developer experience review process. Most developer experience issues surfaced during documentation review, after the API had already been designed and implemented.
+
+I focused on identifying developer experience issues earlier in the design process, when recommendations could still influence the API itself.
+
 During that time, I reviewed hundreds of APIs across multiple platform domains, validated documentation, built test implementations, trained reviewers, developed review guidelines, and later helped design AI-assisted review systems.
 
-The framework did not emerge from a single review process or initiative.
-
-It emerged from repeatedly observing the same categories of developer experience issues across different products, teams, and implementation scenarios.
+Across all of this work, the same categories of developer experience issues appeared repeatedly across different products, teams, and implementation scenarios.
 
 Some issues were visible during API review.
 
@@ -113,8 +115,6 @@ Others appeared only when validating documentation.
 Others emerged only when attempting a realistic implementation.
 
 The framework is an attempt to organize those observations into a model that explains where different types of developer experience risks appear and how they can be identified.
-
-## Applying the Framework
 
 ## Applying the Framework
 
