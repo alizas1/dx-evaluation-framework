@@ -22,29 +22,6 @@ This framework emerged from an effort to answer a simple question:
 
 > How can we determine whether developers will succeed?
 
-## The Problem
-
-Most API reviews focus on the API itself.
-
-Questions such as:
-
-* Is the schema consistent?
-* Are resources modeled correctly?
-* Are validation rules enforced?
-* Does the API follow established conventions?
-
-These questions matter.
-
-But they only evaluate one layer of developer experience.
-
-They do not answer questions such as:
-
-* Will developers understand how this fits into their workflow?
-* Can they determine which APIs they need?
-* Can they accomplish their goals using the documented capabilities?
-
-Developer success depends on more than correctness.
-
 ## The Framework
 
 Developer experience issues emerge across multiple layers.
@@ -81,8 +58,6 @@ flowchart TB
 
     Evaluating a single layer creates false confidence."]
 ```
-
-## Key Insight
 
 Each layer evaluates a different category of developer risk.
 
