@@ -6,8 +6,6 @@ Real-world validation evaluates how capabilities behave when developers attempt 
 
 Rather than evaluating individual APIs in isolation, this layer evaluates the developer experience that emerges when capabilities are combined to solve real problems and build real products.
 
----
-
 ## Approach
 
 A robust implementation is created using only publicly available documentation and without predefined guidance on which APIs or capabilities to use.
@@ -19,11 +17,9 @@ The implementor is tasked with accomplishing a realistic developer goal and must
 * How workflows should be executed.
 * How implementation challenges should be resolved.
 
-Throughout the implementation process, points of friction, confusion, failed assumptions, implementation challenges, unexpected behavior, unresolved questions and all solutions found are recorded.
+Throughout the implementation process, all points of friction, confusion, failed assumptions, implementation challenges, unexpected behavior, unresolved questions and any solutions found are recorded.
 
 The resulting implementation is evaluated both for successful completion and for the findings generated during the implementation process.
-
----
 
 ## Observations
 
@@ -40,8 +36,6 @@ Examples include:
 Some findings reveal opportunities to improve the API. Others expose limitations that are unlikely to change and must instead be surfaced clearly so developers can make informed implementation decisions.
 
 These are the issues that are most likely to remain invisible until a customer hits a wall.
-
----
 
 ## Why It Matters
 
