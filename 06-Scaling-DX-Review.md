@@ -65,13 +65,13 @@ The important question wasn't whether an issue existed. It was how that issue wo
 
 ## Building an AI Reviewer
 
-The codification effort and the AI review system evolved together. 
-I would update the guidelines, test them in the review system, evaluate the output, and then refine the guidelines again.
+The codification effort and the AI review system evolved together.
+I would run the system against an API, perform a manual review myself, and compare the results. The gaps between the two became the basis for the next iteration.
+Each comparison exposed another area where review expertise had not yet been documented clearly enough.
 
-Each iteration exposed another gap in the way review expertise had been documented. 
-Sometimes the system missed issues that experienced reviewers would have caught immediately. 
-Other times it identified an issue but couldn't explain why it mattered. 
-It frequently surfaced observations that were technically correct but unlikely to have a meaningful impact on developers.
+Sometimes the system missed issues that experienced reviewers identified quickly. Other times it surfaced valid observations without explaining why they mattered. In some cases, it prioritized smaller findings while overlooking issues involving developer assumptions, workflow understanding, or platform relationships.
+
+I would update the guidelines, test the changes in the review system, evaluate the output, and repeat the process.
 Each round of testing forced me to make more of the review process explicit.
 
 The prompts incorporated many of the same questions reviewers used during manual reviews:
