@@ -4,17 +4,12 @@
 
 It was a question I commonly got from my team, including experienced reviewers, and one I often struggled to answer.
 
-Over time, I noticed that experienced reviewers consistently identified similar developer experience issues, and arrived at the same conclusions, but explaining how they got there was surprisingly difficult. 
-Much of the reasoning behind those findings existed only in their heads.
-
-A reviewer could look at an API and immediately notice that a name would create the wrong assumption, that a workflow would confuse developers, or that a capability would be difficult to discover. 
-Yet explaining how they arrived at those conclusions was often much harder than identifying the issue itself.
-
+I could often identify a potential developer experience issue immediately. The patterns had become instinctive. I could recognize them when I saw them, but I couldn't always articulate the reasoning that led me there.
 That wasn't a major problem while reviews were performed by humans.
 
-It became a major problem when we started exploring AI-assisted review.
+It became a major problem though, when we started exploring AI-assisted review.
 
-If I could identify an issue but couldn't explain the reasoning behind it, I couldn't share that expertise with other reviewers or teach it to an AI system.
+If I could identify an issue but couldn't explain the reasoning behind it, I couldn't teach it to an AI system.
 
 At the same time, review demand continued to grow. Every API at Wix was required to pass developer experience review with a technical writer before publication, review capacity remained limited despite additional hiring, and the process had become a frustrating bottleneck for developers.
 
@@ -22,7 +17,7 @@ Before review expertise could be encoded into an AI system, I first needed to un
 
 ## Codifying Review Expertise
 
-I'd attempted to document parts of the review process before, but only with limited success, but AI-assisted review changed the requirements.
+I'd attempted to document parts of the review process before, with limited success, but AI-assisted review changed the requirements.
 
 A human reviewer can rely on experience and intuition, but an AI system can't. If I wanted a tool to identify the same issues that experienced reviewers identified, I first needed to explain how those reviewers thought.
 
@@ -43,7 +38,7 @@ Over time, the guidelines evolved beyond a collection of review criteria and bec
 Codification meant writing down:
 
 * **The evaluation lens** — Developer Experience First: does this genuinely make the API harder for external developers?
-* **The audience** — personas, developer intents, and the assumption that a developer may encounter an API in isolation.
+* **The audience** — personas, developer intents, and the assumption that a developer may encounter an API in isolation or land on an API that isn't the best fit for their needs.
 * **What good looks like** — concrete examples of successful workflows and implementation paths.
 * **Prioritization logic** — severity tied to developer impact, implementation risk, and likelihood of confusion.
 * **Anti-patterns with reasoning** — common issues, examples, and explanations of how they affect developers.

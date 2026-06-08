@@ -13,31 +13,29 @@ They may be trying to:
 
 The platform makes tools available to help them achieve those goals.
 
-Eventually I realized that some of the biggest developer experience issues emerged at decision points, trying to answer questions like:
+In order to succeed, they need to understand which capabilities can help them achieve that goal and how those capabilities fit together.
+
+When they don't have the information they need, developers are left trying to answer questions like:
 
 * Which path should I take?
 * Which solution best fits my needs?
 * Can the platform support what I'm trying to build?
 * What should I do next?
 
-The examples below involve different products, capabilities, and workflows, but they all expose the same challenge: the decisions developers must make on their way from a goal to a solution.
+The examples below involve different products, capabilities, and workflows, but they all illustrate the same challenge: empowering developers to move from their goal to a solution.
 
----
 
 ## Choosing an Implementation Path
 
-Developers building Wix apps needed to select an app-building framework before they could begin implementation.
+Developers building Wix apps typically start with an idea of what they want to create and how they want it to behave. Before they could begin implementation, they needed to choose an app-building framework.
 
-The issue wasn't understanding the frameworks themselves. It was helping developers evaluate implementation paths before committing to one.
+Many selected a framework based on familiarity, perceived simplicity, or their existing skill set (UI Builder vs. CLI), without realizing how significantly that choice would affect their future implementation options.
 
-But they didn't know how to, or how significant this choice was going to be. So many chose based on familiarity, perceived simplicity, or their existing skill set.
-Then later they discovered that the extension required to support their intended functionality was not available within the framework they had chosen.
+They would later discover that the extension required to support their intended functionality was not available within the framework they chose.
 
-As a result, developers could commit to an implementation path that could never support their intended outcome.
+As a result, developers were committing to an implementation path that could never support their intended outcome.
 
 To address this, I created guidance that helped developers choose the extension they needed based on the functionality they intended to build, and evaluate frameworks based on their support for the relevant extensions.
-
----
 
 ## Understanding Responsibility
 
@@ -54,9 +52,7 @@ The status endpoint they expected to use returned a generic error rather than in
 
 Developers needed to understand not only the state of the account, but also whether they could take action themselves or whether intervention from the site owner was required. 
 
-I recommended allowing access to account status information even when the account was in a warning, suspension ore restriction state so developers could understand what was happening and guide their customers accordingly.
-
----
+I recommended allowing access to account status information even when the account was in a warning, suspension or restriction state so developers could understand what was happening and guide their customers accordingly.
 
 ## Choosing a Solution
 
@@ -70,15 +66,13 @@ One example involved checkout creation.
 
 Developers could discover both Payments Checkout Sessions and eCommerce Checkout Templates.
 
-Both capabilities generated checkout links.
+Both capabilities generate checkout links.
 
-The important distinction was that Checkout Sessions generated one-time checkout links for a specific purchase scenario, while Checkout Templates generated reusable checkout links.
+The important distinction was that Checkout Sessions generates one-time checkout links for a specific purchase scenario, while Checkout Templates generates reusable checkout links.
 
 Developers needed enough context to understand which capability aligned with their goals before investing in implementation.
 
 I recommended explicitly explaining when each capability should be used and directing developers to the alternative solution when appropriate.
-
----
 
 ## Observation
 
