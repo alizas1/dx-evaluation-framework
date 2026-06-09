@@ -1,6 +1,6 @@
 # Layer 4: Real-World Validation
 
-Even when an API is technically correct, understandable at a glance, and makes sense as documented, implementation often reveals issues that were not visible during review.
+Even when an API is technically correct, understandable at a glance, and makes sense as documented, implementation often reveals issues that weren't visible during review.
 
 Real-world validation evaluates how capabilities behave when developers attempt realistic tasks, workflows, and use cases.
 
@@ -8,7 +8,7 @@ Rather than evaluating individual APIs in isolation, this layer evaluates the de
 
 ## Approach
 
-A robust implementation is created using only publicly available documentation and without predefined guidance on which APIs or capabilities to use.
+A robust implementation is created using only publicly available documentation (plus, in the case of an API that hasn't been published yet, the API's final draft) and without predefined guidance on which APIs or capabilities to use. 
 
 The implementor is tasked with accomplishing a realistic developer goal and must determine:
 
@@ -27,11 +27,11 @@ Many implementation findings emerge when real-world use cases are tested against
 
 Examples include:
 
-* Encountering requirements that were not apparent until implementation began.
-* Discovering that multiple capabilities cannot be combined in the expected way.
+* Encountering requirements that weren't apparent until implementation began.
+* Discovering that multiple capabilities can't be combined in the expected way.
 * Finding that a workflow is significantly more complex than it initially appeared.
-* Discovering that a supported capability does not actually support the intended use case.
-* Needing information that did not seem important until hitting up against it during implementation.
+* Discovering that a supported capability doesn't actually support the attempted use case.
+* Needing information that didn't seem important or relevant until hitting up against it during implementation.
 
 Some findings reveal opportunities to improve the API. Others expose limitations that are unlikely to change and must instead be surfaced clearly so developers can make informed implementation decisions.
 
@@ -41,6 +41,6 @@ These are the issues that are most likely to remain invisible until a customer h
 
 Real-world implementation is where assumptions are tested against reality.
 
-Capabilities that appear straightforward in isolation can behave very differently when combined to support realistic business requirements.
+Capabilities that appear straightforward in isolation can behave very differently when combined to support realistic business requirements, and even very experienced reviewers often miss them.
 
 Real-world validation helps identify those risks before developers encounter them themselves.

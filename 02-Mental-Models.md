@@ -11,13 +11,13 @@ Questions I explore include:
 * Can developers tell what this functionality does?  
 * Can they understand how it is intended to be used?  
 * Are important concepts clearly defined?  
-* Can they distinguish between related concepts?  
-* Are related concepts and relationships clearly represented?  
+* Can they understand the difference between related concepts?   
 * Can they interpret the information being returned without additional context?  
 
 ### Observations 
 Many APIs successfully expose information but don't provide enough context for developers to understand what that information means or how it should be used. 
 Recurring issues include undefined concepts, responses that require domain knowledge to interpret, information whose purpose is unclear, and representations that obscure important relationships. 
+
 Developers are often left asking questions such as:  
 * What is this?  
 * What does it do?  
@@ -33,9 +33,8 @@ Those assumptions may end up being wrong, creating problems that may not become 
 Can developers understand how capabilities fit together? 
 
 Questions I explore include:  
-* How does this API relate to existing APIs?  
-* When should developers use this API instead of another one?
-* How does this capability fit into the larger platform?  
+* How does this API relate to other APIs in the platform?  
+* When should developers use this API instead of another one?  
 * Does terminology align across related APIs?  
 * Are similar concepts represented consistently?  
 * Will developers understand how these APIs work together?  
@@ -56,12 +55,12 @@ Can developers understand how to accomplish their goals?
 
 Questions I explore include:
 
-* Can developers identify the starting point?
-* Can they determine the sequence of actions required?
+* Can developers identify where they should start?
+* Can they see a clear path from one endpoint to the next?
 * Can they understand what happens next?
 * Are important lifecycle transitions clear?
 * Can they understand how multiple capabilities work together to support a workflow?
-* Can they determine how a task is intended to be completed?
+* Is the workflow they need to complete obvious to them?
 
 ### Observations
 
@@ -97,8 +96,8 @@ Questions I explore include:
 ### Observations 
 Developers rarely approach an API without expectations. Those expectations are shaped by previous experience, industry conventions, and familiarity with similar capabilities. 
 Many review findings emerge from identifying assumptions that seem reasonable from a developer's perspective but are not actually supported by the API. 
-Common examples include assumptions about available data, supported access patterns, relationships between concepts, and behavior that appears obvious but is not explicitly defined. 
+Common examples include assumptions about available data, supported access patterns, relationships between concepts, and behavior that appears obvious but isn't explicitly defined - and that doesn't always exist. 
 
 ### Why It Matters 
-An API can behave exactly as designed while still create confusion when developer expectations do not match reality. 
+An API can behave exactly as designed and still create confusion when developer expectations don't match reality. 
 The resulting issues are often difficult to diagnose because developers believe they are using the system correctly.

@@ -1,12 +1,12 @@
 ## Layer 3: Information Validation
 
-Developers should be able to infer as much as possible from the API itself.
+As much as possible, developers should be able to infer the information they need from the API itself.
 
-However, some information cannot reasonably be inferred from naming, structure, or behavior alone.
+However, some information can't reasonably be inferred from naming, structure, or behavior alone.
 
-When that occurs, the information required to bridge that gap must be available elsewhere.
+In these cases, the information required to bridge that gap must be available elsewhere.
 
-Information Validation evaluates whether developers have access to the information required to successfully understand and use a capability.
+Information validation evaluates whether developers have access to the information required to successfully understand and use a capability.
 
 ## Context
 
@@ -22,7 +22,7 @@ Questions I explore include:
 
 ### Observations
 
-Many APIs expose functionality successfully but provide insufficient context for developers to determine how that functionality should be applied.
+Many APIs expose functionality successfully but don't provide sufficient context for developers to determine how to apply that functionality.
 
 Recurring issues include missing business context, undefined terminology, unexplained limitations, and documentation that describes functionality without explaining its purpose.
 
