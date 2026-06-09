@@ -4,7 +4,7 @@
 
 It was a question I commonly got from my team, including experienced reviewers, and one I often struggled to answer.
 
-I could often identify a potential developer experience issue immediately. The patterns had become instinctive. I could recognize them when I saw them, but I couldn't always articulate the reasoning that led me there.
+I could regularly identify potential developer experience issues immediately. The patterns had become instinctive. I could recognize them when I saw them, but I couldn't always articulate the reasoning that led me there.
 That wasn't a major problem while reviews were performed by humans.
 
 It became a major problem though, when we started exploring AI-assisted review.
@@ -24,13 +24,9 @@ A human reviewer can rely on experience and intuition, but an AI system can't. I
 I started by iterating on the review guidelines. Every revision attempted to answer questions that experienced reviewers rarely needed to ask themselves explicitly.
 
 - What assumptions should reviewers make about developers?
-
 - How should findings be prioritized?
-
 - What makes an issue severe?
-
 - What information does a developer need in order to succeed?
-
 - What patterns consistently create confusion?
 
 Over time, the guidelines evolved beyond a collection of review criteria and became a way of capturing reviewer judgment.
@@ -54,9 +50,7 @@ Workflow reviews weren't about documentation completeness. They were about wheth
 
 Platform reviews weren't about relationships between APIs. They were about helping developers understand how capabilities fit together and which solution best matched their needs.
 
-The same pattern appeared throughout the review process.
-
-The important question wasn't whether an issue existed. It was how that issue would affect developers.
+AI got infinitely better at both finding the issues and making actionable recommendations when they were connected to a clear developer impact.
 
 ## Building an AI Reviewer
 
@@ -64,7 +58,7 @@ The codification effort and the AI review system evolved together.
 I would run the system against an API, perform a manual review myself, and compare the results. The gaps between the two became the basis for the next iteration.
 Each comparison exposed another area where review expertise had not yet been documented clearly enough.
 
-Sometimes the system missed issues that experienced reviewers identified quickly. Other times it surfaced valid observations without explaining why they mattered. In some cases, it prioritized smaller findings while overlooking issues involving developer assumptions, workflow understanding, or platform relationships.
+Sometimes the system missed issues that experienced reviewers identified quickly. Other times it surfaced valid observations without explaining why they mattered. It tended to prioritize smaller findings while overlooking issues involving developer assumptions, workflow understanding, or platform relationships.
 
 I would update the guidelines, test the changes in the review system, evaluate the output, and repeat the process.
 Each round of testing forced me to make more of the review process explicit.
