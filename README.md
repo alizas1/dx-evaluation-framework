@@ -4,7 +4,7 @@ By Aliza Solomon
 
 How can we tell if developers will succeed? Are we doing our best to set them up for success?
 
-Most of the work in this portfolio grew out of these questions.
+The work in this portfolio grew out of these questions.
 
 The articles explore recurring patterns I encountered while reviewing APIs, developing review methodologies, validating implementations, and building systems designed to scale developer experience evaluation.
 
@@ -12,36 +12,34 @@ Together, they examine how developer experience issues come about, and how we ca
 
 ## Contents
 
-### 1. Evaluating API Developer Experience
+### 1. [Evaluating API Developer Experience](01-Evaluating-API-Dev-Experience.md)
 
-Introduces the framework used throughout the portfolio, including the four layers of developer experience evaluation.
+A layered approach to API evaluation: understanding, navigation, information, and implementation — each revealing risks the others miss.
 
-### 2. Mental Models
+### 2. [Mental Models](02-Mental-Models.md)
 
-Examines how developers form assumptions about a platform and how those assumptions influence the decisions they make.
+Can developers construct an accurate understanding of what they're looking at — and what breaks when they can't?
 
-### 3. Nobody Starts From Your APIs
+### 3. [Nobody Starts From Your Platform](03-Nobody-Starts-From-Your-Platform.md)
 
-Highlights how developers discover capabilities, choose solutions, and navigate platform complexity.
+The decision point between understanding a capability and having the information to use it: can developers get from their goal to the right solution?
 
-### 4. Information Validation
+### 4. [Information Validation](04-Information-Validation.md)
 
-Explores how information that appears complete can still fail to answer the questions developers need answered.
+How information that appears complete can still fail to answer the questions developers need answered.
 
-### 5. Real-World Validation
+### 5. [Real-World Validation](05-Validation.md)
 
-Observes how implementation exposes assumptions, constraints, and usability issues that are difficult to identify through review alone.
+What you learn by building realistic implementations from public documentation alone — and logging friction as you go.
 
-### 6. Scaling Developer Experience Review
+### 6. [Scaling Developer Experience Review](06-Scaling-DX-Review.md)
 
-Documents the process I went through turning reviewer intuition into explicit evaluation criteria that could be taught, shared, and eventually incorporated into AI-assisted review systems.
+An effort to scale API review that became an effort to understand how experienced reviewers think — and document that reasoning.
 
 ## Finding Problems Before Developers Do
 
 In my experience, most developer experience issues can be found before developers encounter them, if you know where to look.
 
-The examples in this portfolio are drawn from years of API DX review, platform guidance, reviewer training, implementation validation and AI-assisted evaluation work. Across those efforts, the same categories of issues appeared repeatedly.
+The examples in this portfolio are drawn from years of API review, platform guidance, reviewer training, implementation validation, and AI-assisted evaluation work. Across those efforts, the same categories of issues appeared repeatedly.
 
 Some became visible while developers were deciding which solution to use. Others emerged when information was missing, assumptions were incorrect, or implementation exposed constraints that were not apparent during review.
-
-Together, these examples explore where different types of developer experience issues emerge and how they can be identified before they reach developers.

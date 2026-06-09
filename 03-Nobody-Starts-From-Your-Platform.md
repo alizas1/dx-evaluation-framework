@@ -1,6 +1,6 @@
 # Nobody Starts From Your Platform
 
-People adopt platforms because they want to accomplish something.
+Developers don't arrive at a platform knowing which APIs to use. They arrive with a goal and work backward toward a solution.
 
 They may be trying to:
 
@@ -30,7 +30,7 @@ Developers building Wix apps typically start with an idea of what they want to c
 
 Many would select a framework based on familiarity, perceived simplicity, or their existing skill set (UI Builder vs. CLI), without realizing how significantly that choice would affect their future implementation options.
 
-They would later discover that the extension required to support their intended functionality was'nt available within the framework they chose.
+They would later discover that the extension required to support their intended functionality wasn't available within the framework they chose.
 
 As a result, developers were committing to an implementation path that could never support their intended outcome.
 
@@ -48,7 +48,7 @@ Under certain circumstances, however, an account could enter a warning, suspensi
 The developer could not resolve the issue themselves.
 The status endpoint they expected to use returned a generic error rather than information about the account state or the action required to resolve it.
 
-Developers needed to understand not only the state of the account, but also whether they could take action themselves or whether intervention from the site owner was required. 
+Developers needed to understand not only the state of the account, but also whether they could take action themselves or whether intervention from the site owner was required.
 
 I recommended allowing access to account status information even when the account was in a warning, suspension or restriction state so developers could understand what was happening and guide their customers accordingly.
 

@@ -8,7 +8,7 @@ Rather than evaluating individual APIs in isolation, this layer evaluates the de
 
 ## Approach
 
-A robust implementation is created using only publicly available documentation (plus, in the case of an API that hasn't been published yet, the API's final draft) and without predefined guidance on which APIs or capabilities to use. 
+A robust implementation is created using only publicly available documentation (plus, in the case of an API that hasn't been published yet, the API's final draft) and without predefined guidance on which APIs or capabilities to use.
 
 The implementor is tasked with accomplishing a realistic developer goal and must determine:
 
