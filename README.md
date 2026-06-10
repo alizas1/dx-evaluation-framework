@@ -36,10 +36,19 @@ What you learn by building realistic implementations from public documentation a
 
 An effort to scale API review that became an effort to understand how experienced reviewers think — and document that reasoning.
 
+## Where This Work Comes From
+
+When I joined Wix, there was no formal developer experience review process. Most issues surfaced during documentation review of the JavaScript SDK (Velo), after the REST and RPC underneath had already been designed. When APIs were hard to understand or implement, teams worked around it in the SDK wrapper layer. By the time they wanted to publish REST, that workaround debt had accumulated into a long list of breaking changes that were too late to implement.
+
+I established developer experience review during API design, which became a required step of API publication. Over that time I reviewed roughly 300 APIs across Stores, Bookings, Payments, Contacts, Analytics, and most other platform domains. The articles below are the evaluation model that emerged from this work.
+
+- Established developer experience review at Wix; a required publication gate
+- Reviewed ~300 APIs across most platform domains
+- Trained reviewers and codified review judgment ([Scaling Developer Experience Review](06-Scaling-DX-Review.md))
+- PM, SME, and QA for an AI-assisted DX review tool
+
 ## Finding Problems Before Developers Do
 
 In my experience, most developer experience issues can be found before developers encounter them, if you know where to look.
 
-The examples in this portfolio are drawn from years of API review, platform guidance, reviewer training, implementation validation, and AI-assisted evaluation work. Across those efforts, the same categories of issues appeared repeatedly.
-
-Some became visible while developers were deciding which solution to use. Others emerged when information was missing, assumptions were incorrect, or implementation exposed constraints that were not apparent during review.
+The examples in this portfolio are drawn from years of API review, platform guidance, reviewer training, implementation validation, and AI-assisted evaluation work. The same issues appeared repeatedly, though often at different points in the process. Some became visible while developers were deciding which solution to use. Others emerged when information was missing, assumptions were incorrect, or implementation exposed constraints that were not apparent during review.

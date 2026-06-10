@@ -19,7 +19,7 @@ This framework emerged from an effort to answer a simple question:
 
 ## The Framework
 
-Understanding whether developers will succeed requires evaluating more than the API itself. Different evaluation techniques expose different categories of developer experience risk.
+Understanding whether developers will succeed requires evaluating more than the API itself. Different evaluation techniques expose different types of developer experience risk.
 
 Developer experience risk shows up in layers:
 
@@ -45,22 +45,18 @@ The articles that follow examine these risks in practice:
 
 This framework emerged from years of evaluating APIs from the perspective of developer success.
 
-When I joined Wix, there was no formal developer experience review process. Most developer experience issues surfaced during documentation review, after the API had already been designed and implemented.
+When I joined Wix, there was no formal developer experience review process. Most developer experience issues surfaced during documentation review of the JavaScript SDK (Velo), after the REST and RPC underneath had already been designed.
 
-I focused on identifying developer experience issues earlier in the design process, when recommendations could still influence the API itself. The platformization team then made developer experience review a required stage of the API publication process, bringing developer experience considerations into API design.
+I established developer experience review during API design, and it became a required step of API publication. Over that time I reviewed roughly 300 APIs across a wide range of platform domains, trained reviewers, codified review judgment, and served as PM, SME, and QA for an AI-assisted review system.
 
-During that time, I reviewed hundreds of APIs across a wide range of platform domains, validated documentation, trained reviewers, developed review guidelines, built test implementations, and later helped design an AI-assisted review system.
+During most of this period, DX review focused on mental models and information validation. Real-world validation was part of the model from the start, but building realistic implementations took much longer than the publication process allowed. When we got access to AI tools, that changed: validation became practical enough to run regularly, and it surfaced issues that review alone hadn't caught.
 
-During most of this period, DX review focused on mental models and information validation. We tried to implement real-world validation, but building realistic implementations took much longer than the publication process allowed. All that changed when we got access to AI tools. Validation became practical, and it revealed issues review alone hadn't surfaced.
-
-Across all of this work, the same categories of developer experience issues appeared repeatedly across different products, teams, and implementation scenarios.
-
-Some issues were visible during API review. Others appeared only when validating documentation. Others emerged only when attempting to build a realistic implementation.
+Across all of this work, the same issues surfaced again and again across different products, teams, and implementation scenarios, though not always during the same evaluation stage. Some were visible during API review. Others appeared only when validating documentation. Others emerged only when attempting to build a realistic implementation.
 
 The framework is an attempt to organize those observations into a model that explains where different types of developer experience risks appear and how they can be identified.
 
 ## Applying the Framework
 
-Each article focuses on a different category of developer experience risk, from platform understanding and capability selection to information validation and implementation challenges.
+Each article focuses on a different type of developer experience risk, from platform understanding and capability selection to information validation and implementation challenges.
 
 Taken together, they show that developer success depends on a chain of decisions, assumptions, information, and implementation details, and that failures can emerge at any point along that path.

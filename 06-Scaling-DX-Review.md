@@ -54,8 +54,9 @@ AI got infinitely better at both finding the issues and making actionable recomm
 
 ## Building an AI Reviewer
 
-The codification effort and the AI review system evolved together.
-I would run the system against an API, perform a manual review myself, and compare the results. The gaps between the 2 became the basis for the next iteration.
+The codification effort and the AI review system evolved together. I served as PM, SME, and QA, making all product decisions.
+
+I would run the system against an API, perform a manual review myself, and compare the results. The gaps between the two became the basis for the next iteration.
 Each comparison exposed another area where review expertise had not yet been documented clearly enough.
 
 Sometimes the system surfaced valid observations without explaining why they mattered. It tended to prioritize smaller findings while overlooking issues involving developer assumptions, workflow understanding, or platform relationships.
@@ -94,8 +95,8 @@ The redesign reflected a broader realization: experienced reviewers don't evalua
 
 ## Outcome
 
-The project began as an effort to scale developer experience reviews.
-But it became an effort to understand how review expertise works, how experienced reviewers identify developer experience issues, and how that reasoning can be made explicit.
+The project began as an effort to scale developer experience reviews and relieve a growing review bottleneck.
+It became an effort to understand how review expertise works, how experienced reviewers identify developer experience issues, and how that reasoning can be made explicit.
 
 Questions that had previously existed only in the minds of experienced reviewers became documented review practices, evaluation criteria, and eventually the foundation of an AI-assisted review system. That reasoning was the prerequisite. The system was only as good as what we'd written down.
 
