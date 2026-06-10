@@ -4,9 +4,9 @@
 
 It was a question I commonly got from my team, including experienced reviewers, and one I often struggled to answer.
 
-I could regularly identify potential developer experience issues immediately. The patterns had become instinctive. I could recognize them when I saw them, but I couldn't always articulate the reasoning that led me there.
-That wasn't a major problem while reviews were performed by humans.
+I could regularly identify potential developer experience issues immediately, because the patterns had become instinctive. I recognized them when I saw them, but I couldn't always articulate the reasoning that led me there.
 
+That wasn't a major problem while reviews were performed by humans.
 It became a major problem though, when we started exploring AI-assisted review.
 
 If I could identify an issue but couldn't explain the reasoning behind it, I couldn't teach it to an AI system.
@@ -55,14 +55,8 @@ AI got infinitely better at both finding the issues and making actionable recomm
 ## Building an AI Reviewer
 
 The codification effort and the AI review system evolved together.
-I would run the system against an API, perform a manual review myself, and compare the results. The gaps between the two became the basis for the next iteration.
+I would run the system against an API, perform a manual review myself, and compare the results. The gaps between the 2 became the basis for the next iteration.
 Each comparison exposed another area where review expertise had not yet been documented clearly enough.
-
-The comparison revealed a consistent pattern:
-
-* **Substantial overlap** — the AI and I caught many of the same issues, which validated the system for scaling shared issue classes.
-* **Differential strengths** — the AI caught smaller, localized issues I tended to miss, such as naming problems in deeply nested objects. I caught bigger, high-level DX issues the AI missed significantly: developer assumptions, workflow understanding, and platform relationships.
-* **Calibration** — I occasionally needed to downgrade an AI finding, but generally no more than one per review.
 
 Sometimes the system surfaced valid observations without explaining why they mattered. It tended to prioritize smaller findings while overlooking issues involving developer assumptions, workflow understanding, or platform relationships.
 
@@ -88,7 +82,8 @@ Naming issues, missing descriptions, and similar findings appeared consistently.
 Findings involving developer assumptions, platform relationships, workflow failures, or capability selection were far less reliable, despite often having a much greater impact on developer success.
 The issues that were easiest for the model to identify weren't necessarily the issues that mattered most.
 
-The overlap on shared findings made the AI useful for scale. The gaps on high-level DX issues explained why a single prompt wasn't enough.
+On most reviews, the AI's output was accurate, and excellent at catching smaller, localized issues, including ones I might miss, like naming problems in deeply nested objects. 
+It tended to miss bigger, high-level DX issues, including developer assumptions, workflow understanding, and platform relationships. 
 
 To address this, I redesigned the prompting approach around multiple specialized evaluators.
 Rather than asking a single reviewer to identify every type of issue, each evaluator focused on a specific aspect of the developer experience.
@@ -102,8 +97,6 @@ The redesign reflected a broader realization: experienced reviewers don't evalua
 The project began as an effort to scale developer experience reviews.
 But it became an effort to understand how review expertise works, how experienced reviewers identify developer experience issues, and how that reasoning can be made explicit.
 
-Questions that had previously existed only in the minds of experienced reviewers became documented review practices, evaluation criteria, and eventually the foundation of an AI-assisted review system.
-
-Overlap on shared findings made the AI viable for scale. Gaps on high-level DX issues showed that judgment doesn't collapse into a single prompt. And codification proved to be the prerequisite — the AI system was only as good as the reasoning behind the guidelines.
+Questions that had previously existed only in the minds of experienced reviewers became documented review practices, evaluation criteria, and eventually the foundation of an AI-assisted review system. That reasoning was the prerequisite. The system was only as good as what we'd written down.
 
 The result was a review process that could be taught, applied more consistently, and partially automated while remaining focused on the same goal that guided manual reviews: helping developers succeed.
