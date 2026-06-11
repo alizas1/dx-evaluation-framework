@@ -123,6 +123,8 @@ Common examples include assumptions about available data, supported access patte
 
 In an Analytics Sessions API, `Get Sessions` returned a list of session IDs. For a developer building session replay or recording playback, those IDs on their own aren't enough to get to the recording. They would expect a link or URL. I recommended either returning recording links (or another actionable resource) in the response, or documenting clearly how IDs map to their end goal.
 
+See [After the Findings](06-Prioritizing-Developer-Experience-Findings.md) for how that assumption held up when I worked through the finding with the API developer.
+
 ### Why It Matters
 
 An API can behave exactly as designed and still create confusion when developer expectations don't match reality.

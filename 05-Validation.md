@@ -35,15 +35,15 @@ Examples include:
 
 ### Example
 
-While validating a set of Stores Catalog v3 APIs, I had AI build a headless store with multiple locations and inventory tracking enabled, working with the v3 products, inventory, locations, brands, ribbons, info sections, customizations, and categories APIs.
+While validating a set of Stores Catalog v3 APIs, I had AI build a headless store with multiple locations and inventory tracking enabled, working with the v3 products, inventory, locations, brands, ribbons, info sections, customizations, and categories APIs, plus the relevant eCommerce cart, checkout and orders APIs.
 
-Many issues surfaced that reviewing the individual APIs hadn't predicted. The first pass used Catalog v1 APIs because v3 prerequisites, including site configuration in the dashboard, weren't documented clearly. After switching to v3, variants, inventory locations, and product media each broke in different places. Media remained difficult even once variants and locations were working.
+Many issues surfaced that review of the individual APIs hadn't predicted. The first pass used Catalog v1 APIs because v3 prerequisites, including requirements during site creation, weren't documented. After switching to v3, variants, inventory locations, and product media each broke in different places. 
 
-Inventory deduction across locations was harder still. I couldn't get stock to deduct from the correct location through Checkout. A developer explained that Checkout doesn't support multi-location inventory deduction. Inventory deducted only when an order was created through Orders outside Checkout with a location ID and marked paid.
+Inventory deduction across locations was very confusing. I couldn't get stock to deduct from the correct location. When I reached out to a developer from the team, they explained that Wix Checkout doesn't support multi-location inventory deduction. Inventory would be deducted from the correct location only when an order was created through orders outside of Wix's checkout, assigned with a location ID and marked as paid.
 
-The same pattern ran through the validation: each API was documented on its own, but a complex store needed end-to-end flows. Setup needed a single path through variants, locations, and media. Purchase needed clarity on when Checkout applies and when multi-location inventory requires a different order flow.
+Each API was documented as if it stood alone, but a complex store would use at least 10 APIs, and needed end-to-end flows. A setup workflow was needed with a clear path through variants, locations, inventory and media. Purchasing flows were also needed that spelled out Wix Checkout’s limits for multi-location inventory, and the order path that deducts stock properly for the outlying cases.
 
-Some findings reveal opportunities to improve the API. Others expose limitations that are unlikely to change and must instead be surfaced clearly so developers can make informed implementation decisions.
+Some findings revealed opportunities to improve the APIs. Others exposed limitations that are unlikely to change and needed to be surfaced clearly so developers can make informed implementation decisions.
 
 These are the issues that are most likely to remain invisible until a customer hits a wall.
 

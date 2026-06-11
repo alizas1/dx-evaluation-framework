@@ -32,7 +32,11 @@ How information that appears complete can still fail to answer the questions dev
 
 What you learn by building realistic implementations from public documentation alone — and logging friction as you go.
 
-### 6. [Scaling Developer Experience Review](06-Scaling-DX-Review.md)
+### 6. [After the Findings](06-Prioritizing-Developer-Experience-Findings.md)
+
+What happened after review listed the issues: which findings were worth pushing on, and what shipped before publication.
+
+### 7. [Scaling Developer Experience Review](07-Scaling-DX-Review.md)
 
 An effort to scale API review that became an effort to understand how experienced reviewers think — and document that reasoning.
 
@@ -44,7 +48,7 @@ I established developer experience review during API design, which became a requ
 
 - Established developer experience review at Wix; a required publication gate
 - Reviewed ~300 APIs across most platform domains
-- Trained reviewers and codified review judgment ([Scaling Developer Experience Review](06-Scaling-DX-Review.md))
+- Trained reviewers and codified review judgment ([Scaling Developer Experience Review](07-Scaling-DX-Review.md))
 - PM, SME, and QA for an AI-assisted DX review tool
 
 ## Finding Problems Before Developers Do
