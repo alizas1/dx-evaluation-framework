@@ -1,0 +1,52 @@
+---
+description: Terminology, voice, and style for DX evaluation portfolio markdown
+globs: "{README.md,0[1-7]-*.md}"
+alwaysApply: false
+---
+
+# Portfolio writing rules
+
+Applies when editing portfolio articles only (`README.md`, `01`–`07`). Does not apply to `COLLABORATION-WORKFLOW.md` or other repo files. For collaboration workflow (plan before execute), see `COLLABORATION-WORKFLOW.md`.
+
+## Terminology
+
+- **operation** — default term for a named API action (REST or RPC). Example: *get and list operations*, *an operation named Increment Use Count*.
+- **endpoint** — use only for HTTP routes, URL paths, or workflow navigation between calls. Example: *which endpoint to use first*, *a clear path from one endpoint to the next*.
+- **call / caller** — OK for generic invocation language.
+- **Avoid method** — internal/RPC jargon; inconsistent with the rest of the portfolio.
+- **API names in prose** — plain words with spaces (Increment Use Count, Get Sessions, Redeem Coupon). No camelCase, no backticks or code font in narrative text.
+- **Spreadsheet sources** — `@mentions` in review threads are the person called out, not the writer.
+
+## Voice
+
+- Preserve the user's voice. Outcome-focused; first person where the article is personal.
+- Plain example openings: "In a Contacts API…", "I recommended…", "I flagged…".
+- Do not add framing, structure, or labels the user did not ask for.
+- No em dashes unless the user keeps one intentionally.
+- Accurate attribution: do not claim product or naming decisions the API developer made.
+
+### Phrases to avoid (AI pivot language)
+
+- "but it wasn't the hard part"
+- "what mattered was"
+- "same pattern"
+- Contrastive pivots: "it wasn't X, it was Y"
+
+## Content accuracy
+
+- Use real review findings when possible (spreadsheets, DSRR, shipped work).
+- Do not invent developer behavior or technical outcomes; rephrase if uncertain.
+- Do not use examples the user has flagged as inaccurate.
+- Hide third-party product names in public portfolio text (e.g. Twipla).
+
+## Structure and scope
+
+- Selective examples — do not exhaustively retrofit older articles unless asked.
+- Do not expand scope beyond what was requested.
+- Show drafts in chat before large edits; execute only on explicit go (`execute`, `go ahead`, `apply`, `push`).
+- Re-read files before applying changes; do not overwrite user edits.
+
+## Git
+
+- Commit and push only when explicitly asked.
+- Never update git config.
