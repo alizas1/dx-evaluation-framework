@@ -6,11 +6,15 @@ I would rank my findings by severity for the API team as a starting point for wh
 
 That's when I had to decide what to drop, what to push for, and occasionally what to escalate. Each decision came down to the effect on external developers if the issue shipped as-is.
 
-In a Localization API, the developer had added an object called `revision` which included a `version` field. However, in Wix `revision` is a standard field that increments by 1 each time the entity is updated. I flagged the naming as redundant and confusing, and recommended replacing this object name with `versionInfo` if nesting was necessary.
+## When naming misleads developers
+
+In a Localization API, the developer had added an object called revision which included a version field. However, in Wix revision is a standard field that increments by 1 each time the entity is updated. I flagged the naming as redundant and confusing, and recommended replacing this object name with version info if nesting was necessary.
 
 Because this broke a company-wide standard, and deprecating a field wasn't considered a particularly expensive process, I chose to prioritize this as a significant issue and push back on it even though the developer didn't think it was significant enough to go back and fix.
 
-Naming findings might look minor in a schema review, but if the name ships wrong, developers build on the wrong assumption and discover the mismatch later, usually during implementation.
+In a Coupons API review, an operation named Increment Use Count applied a coupon toward a usage limit and incremented an internal use counter. The developer didn't see a problem: from inside the service, that was what the operation did. I pushed for a name that matched what an external developer was trying to do, not what happened to the counter. He disagreed, and resolving it took months. Publication was delayed for unrelated reasons, which gave me the opportunity to keep pushing before it shipped. He eventually agreed to rename it to Redeem Coupon.
+
+Naming findings might look minor in a schema review, but a misleading name that ships anyway leads developers to build on the wrong assumption and discover the mismatch later, usually during implementation.
 
 ## When there is no fix before launch
 

@@ -34,7 +34,7 @@ What you learn by building realistic implementations from public documentation a
 
 ### 6. [After the Findings](06-Prioritizing-Developer-Experience-Findings.md)
 
-What happened after review listed the issues: which findings were worth pushing on, and what shipped before publication.
+What happened after review; which findings were worth pushing on, and what shipped before publication.
 
 ### 7. [Scaling Developer Experience Review](07-Scaling-DX-Review.md)
 
@@ -56,3 +56,11 @@ I established developer experience review during API design, which became a requ
 In my experience, most developer experience issues can be found before developers encounter them, if you know where to look.
 
 The examples in this portfolio are drawn from years of API review, platform guidance, reviewer training, implementation validation, and AI-assisted evaluation work. The same issues appeared repeatedly, though often at different points in the process. Some became visible while developers were deciding which solution to use. Others emerged when information was missing, assumptions were incorrect, or implementation exposed constraints that were not apparent during review.
+
+## Other writing
+
+- [Taking Wix's Platform to the Next Level With 3 Golden Rules For API Usability](https://www.linkedin.com/pulse/taking-wixs-platform-next-level-3-golden-rules-api-aliza-solomon/)
+- [Partnering for Success: How Design Partners Elevate API Usability](https://www.wix.engineering/post/partnering-for-success-how-design-partners-elevate-api-usability)
+- [Unleashing Your API's Potential: How Strategic Documentation Drives Success](https://medium.com/wix-engineering/unleashing-your-apis-potential-how-strategic-documentation-drives-success-5aa84bf29793)
+- [From Syntax Checker to Critical Reviewer: How We Forced AI to Catch Real API Quality Issues](https://www.wix.engineering/post/from-syntax-checker-to-critical-reviewer-how-we-forced-ai-to-catch-real-api-quality-issues)
+- [AI Project Leadership: When "Not Technical Enough" Became My Superpower](https://medium.com/@alizaryeh/ai-project-leadership-when-not-technical-enough-became-my-superpower-4c564573d267)
