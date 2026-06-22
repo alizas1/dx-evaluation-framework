@@ -32,9 +32,9 @@ How information that appears complete can still fail to answer the questions dev
 
 What you learn by building realistic implementations from public documentation alone — and logging friction as you go.
 
-### 6. [After the Findings](06-Prioritizing-Developer-Experience-Findings.md)
+### 6. [After the Findings](06-Prioritizing-Developer-Experience-Findings.md) *(work in progress)*
 
-What happened after review; which findings were worth pushing on, and what shipped before publication.
+What happens after review: how findings get prioritized, which ones are worth pushing on, and what sometimes ships anyway.
 
 ### 7. [Scaling Developer Experience Review](07-Scaling-DX-Review.md)
 
@@ -62,5 +62,5 @@ The examples in this portfolio are drawn from years of API review, platform guid
 - [Taking Wix's Platform to the Next Level With 3 Golden Rules For API Usability](https://www.linkedin.com/pulse/taking-wixs-platform-next-level-3-golden-rules-api-aliza-solomon/)
 - [Partnering for Success: How Design Partners Elevate API Usability](https://www.wix.engineering/post/partnering-for-success-how-design-partners-elevate-api-usability)
 - [Unleashing Your API's Potential: How Strategic Documentation Drives Success](https://medium.com/wix-engineering/unleashing-your-apis-potential-how-strategic-documentation-drives-success-5aa84bf29793)
-- [From Syntax Checker to Critical Reviewer: How We Forced AI to Catch Real API Quality Issues](https://www.wix.engineering/post/from-syntax-checker-to-critical-reviewer-how-we-forced-ai-to-catch-real-api-quality-issues)
 - [AI Project Leadership: When "Not Technical Enough" Became My Superpower](https://medium.com/@alizaryeh/ai-project-leadership-when-not-technical-enough-became-my-superpower-4c564573d267)
+- [From Syntax Checker to Critical Reviewer: How We Forced AI to Catch Real API Quality Issues](https://www.wix.engineering/post/from-syntax-checker-to-critical-reviewer-how-we-forced-ai-to-catch-real-api-quality-issues)

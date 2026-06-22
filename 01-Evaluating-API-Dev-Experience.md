@@ -60,6 +60,6 @@ The framework is an attempt to organize those observations into a model that exp
 
 Each article focuses on a different type of developer experience risk, from platform understanding and capability selection to information validation and implementation challenges.
 
-[After the Findings](06-Prioritizing-Developer-Experience-Findings.md) covers what happened after those risks were identified: which findings were worth pushing on, and what shipped before publication.
+[After the Findings](06-Prioritizing-Developer-Experience-Findings.md) will cover what happens after those risks are identified: how findings get prioritized, which ones are worth pushing on, and what sometimes ships anyway.
 
 Taken together, they show that developer success depends on a chain of decisions, assumptions, information, and implementation details, and that failures can emerge at any point along that path.
