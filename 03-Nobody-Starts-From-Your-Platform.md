@@ -34,7 +34,7 @@ They would later discover that the extension required to support their intended 
 
 As a result, developers were committing to an implementation path that could never support their intended outcome.
 
-To address this, I created guidance that helped developers to first choose the extension they needed based on the functionality they intended to build, and to then evaluate frameworks based on their support for the relevant extensions.
+To address this, I created guidance that helped developers to first [choose the extension they needed based on the functionality they intended to build](https://dev.wix.com/docs/build-apps/develop-your-app/extensions/map-your-app-s-functionality-to-wix-s-extensions), and to then evaluate frameworks based on their support for the relevant extensions.
 
 ## Understanding Responsibility
 
