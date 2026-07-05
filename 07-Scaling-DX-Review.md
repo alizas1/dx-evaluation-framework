@@ -40,7 +40,7 @@ Codification meant writing down:
 * **Anti-patterns with reasoning** — common issues, examples, and explanations of how they affect developers.
 * **Output expectations** — how findings should be structured, communicated, and prioritized.
 
-The reasoning behind the findings mattered at least as much as the findings themselves.
+The reasoning behind the findings mattered at least as much as the findings themselves. In manual review, those calls played out case by case. [After the Findings](06-Prioritizing-Developer-Experience-Findings.md) describes that process before it was written down here.
 
 Naming reviews weren't really about names. They were about the assumptions developers would make when interpreting an API.
 

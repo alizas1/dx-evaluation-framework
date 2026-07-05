@@ -43,7 +43,7 @@ Inventory deduction across locations was very confusing. I couldn't get stock to
 
 Each API was documented as if it stood alone, but a complex store would use at least 10 APIs, and needed end-to-end flows. A setup workflow was needed with a clear path through variants, locations, inventory and media. Purchasing flows were also needed that spelled out Wix Checkout’s limits for multi-location inventory, and the order path that deducts stock properly for the outlying cases.
 
-Some findings revealed opportunities to improve the APIs. Others exposed limitations that are unlikely to change and needed to be surfaced clearly so developers can make informed implementation decisions.
+Some findings revealed opportunities to improve the APIs. Others exposed limitations that are unlikely to change and needed to be surfaced clearly so developers can make informed implementation decisions. [After the Findings](06-Prioritizing-Developer-Experience-Findings.md) covers how I weighed those against publication pressure when deciding what to push for, drop, or defer.
 
 These are the issues that are most likely to remain invisible until a customer hits a wall.
 

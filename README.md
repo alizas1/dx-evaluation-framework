@@ -32,9 +32,9 @@ How information that appears complete can still fail to answer the questions dev
 
 What you learn by building realistic implementations from public documentation alone — and logging friction as you go.
 
-### 6. [After the Findings](06-Prioritizing-Developer-Experience-Findings.md) *(work in progress)*
+### 6. [After the Findings](06-Prioritizing-Developer-Experience-Findings.md)
 
-What happens after review: how findings get prioritized, which ones are worth pushing on, and what sometimes ships anyway.
+What happened after review: how findings were prioritized, which were worth pushing on, and what sometimes shipped anyway.
 
 ### 7. [Scaling Developer Experience Review](07-Scaling-DX-Review.md)
 
