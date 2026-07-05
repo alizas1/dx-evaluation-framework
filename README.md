@@ -34,7 +34,7 @@ What you learn by building realistic implementations from public documentation a
 
 ### 6. [After the Findings](06-Prioritizing-Developer-Experience-Findings.md)
 
-What happened after review; which findings were worth pushing on, and what shipped before publication.
+What happened after review: how findings were prioritized, which were worth pushing on, and what sometimes shipped anyway.
 
 ### 7. [Scaling Developer Experience Review](07-Scaling-DX-Review.md)
 
