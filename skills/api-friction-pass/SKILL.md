@@ -23,7 +23,7 @@ Do not invent that surface.
 Note whether the surface looks published or draft when that's obvious from what you can open. If you can't tell and it would change the pass, ask.
 If the in-scope surface is still unclear, ask before reading deeply.
 
-### 2. API purpose 
+### 2. Find the API purpose 
 Complete in one sentence: **"This API lets a developer ___."** Print this in the chat.
 Write it from the outside — what someone can accomplish, not how the system works inside.
 If you cannot finish that sentence confidently from the in-scope surface alone, that gap is itself a finding.
@@ -43,7 +43,7 @@ Use these prompts (skip any that don't apply):
 - if an agent only has the OpenAPI / schema / examples in the contract, is the important shape still there?
 Stay with contradictions. If two surfaces in scope disagree, say so. If you need an answer that only exists outside the user-defined surface, that is a finding — do not fill it from insider knowledge.
 
-### 5. Write findings
+### 5. Write the findings
 For each real issue, write in the chat:
 - **What broke** — the concrete confusion or failure
 - **Where** — page, endpoint, field, example, or spec path
