@@ -8,7 +8,7 @@ description: >-
 
 # API friction pass
 
-Read **only the integrator-facing surface in scope** — live public docs, or draft docs the user defines. No internal knowledge, repo, or team chat unless it is inside the user-defined surface. Find where a first-time integrator would get confused, guess wrong, or fail to finish a real use case.
+Read **only the integrator-facing surface in scope** that the user defines. No internal knowledge, repo, or team chat unless it is inside the user-defined surface. Find where a first-time integrator would get confused, guess wrong, or fail to finish a real use case, and list them.
 
 ## How to use this skill
 
@@ -24,28 +24,27 @@ Note whether the surface looks published or draft when that's obvious from what 
 If the in-scope surface is still unclear, ask before reading deeply.
 
 ### 2. API purpose 
-Complete in one sentence: **"This API lets a developer ___."**
+Complete in one sentence: **"This API lets a developer ___."** Print this in the chat.
 Write it from the outside — what someone can accomplish, not how the system works inside.
 If you cannot finish that sentence confidently from the in-scope surface alone, that gap is itself a finding.
 
 ### 3. Pick 1–2 real use cases
-Write 1–2 concrete scenarios a real integrator would attempt (not "use the API").
+Write 1–2 concrete scenarios a real integrator would attempt (not "use the API") and print them in the chat.
 Example shape: "Create X, then update Y, then confirm Z from the response."
 These use cases anchor the rest of the pass. When unsure whether something matters, ask: *would someone pursuing one of these use cases actually hit this?*
 
 ### 4. Follow the path like an integrator
-Using only the in-scope surface, follow the path for those use cases. Prefer noticing anomalies ("that doesn't fit") over lecturing.
+Using only the in-scope surface, follow the path for those use cases. Prefer noticing anomalies ("that doesn't fit").
 Use these prompts (skip any that don't apply):
-- Can I authenticate and make a first successful call from what's in scope?
 - Do names and descriptions match what the call actually does?
 - If I follow the happy path, where do I have to guess?
 - Are examples copy-pasteable, and do they match the contract?
 - When something fails, do errors tell me what to do next?
-- Could an agent finish from the machine-readable bits alone, or does the important shape live only in prose?
+- if an agent only has the OpenAPI / schema / examples in the contract, is the important shape still there?
 Stay with contradictions. If two surfaces in scope disagree, say so. If you need an answer that only exists outside the user-defined surface, that is a finding — do not fill it from insider knowledge.
 
 ### 5. Write findings
-For each real issue:
+For each real issue, write in the chat:
 - **What broke** — the concrete confusion or failure
 - **Where** — page, endpoint, field, example, or spec path
 - **Why it matters** — which use case from step 3 it blocks or slows.
