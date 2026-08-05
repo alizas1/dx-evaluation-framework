@@ -49,4 +49,3 @@ For each real issue, write in the chat:
 - **Where** — page, endpoint, field, example, or spec path
 - **Why it matters** — which use case from step 3 it blocks or slows.
 Drop nitpicks that would not affect those use cases.
-End with the purpose sentence (or the gap if missing), the 1–2 use cases, and the findings.
