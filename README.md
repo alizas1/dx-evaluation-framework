@@ -40,6 +40,12 @@ What happened after review: how findings were prioritized, which were worth push
 
 An effort to scale API review that became an effort to understand how experienced reviewers think — and document that reasoning.
 
+## Skills
+
+### [API friction pass](skills/api-friction-pass/SKILL.md)
+
+A lightweight skill that reads an API's integrator-facing docs like a first-time user and lists where they'd get stuck finishing a real use case.
+
 ## Where This Work Comes From
 
 When I joined Wix, there was no formal developer experience review process. Most issues surfaced during documentation review of the JavaScript SDK (Velo), after the REST and RPC underneath had already been designed. When APIs were hard to understand or implement, teams worked around it in the SDK wrapper layer. By the time they wanted to publish REST, that workaround debt had accumulated into a long list of breaking changes that were too late to implement.
