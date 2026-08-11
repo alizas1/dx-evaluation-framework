@@ -42,7 +42,7 @@ An effort to scale API review that became an effort to understand how experience
 
 ## Skills
 
-### [API friction pass](skills/api-friction-pass/SKILL.md)
+### [API friction pass](https://github.com/alizas1/skills/tree/main)
 
 A lightweight skill that reads an API's integrator-facing docs like a first-time user and lists where they'd get stuck finishing a real use case.
 
